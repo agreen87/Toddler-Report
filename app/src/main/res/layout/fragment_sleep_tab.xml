@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SleepTab">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/paper"
+        android:alpha="0.3">
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/nameTextViewSleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp">
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/radioGroupSleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            android:layout_below="@id/nameTextViewSleep"
+            android:layout_centerInParent="true">
+
+            <RadioButton
+                android:id="@+id/napRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nap">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/noNapRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Nap">
+            </RadioButton>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/durationEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/radioGroupSleep"
+            android:padding="6dp"
+            android:hint="Duration"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/commentEditTextSleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/durationEditText"
+            android:inputType="textCapSentences"
+            android:padding="4dp"
+            android:hint="Comments:">
+        </EditText>
+
+        <Button
+            android:id="@+id/previewMessageButtonSleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_button"
+            android:layout_below="@id/commentEditTextSleep"
+            android:text="Preview Message">
+        </Button>
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/previewMessageTextViewSleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/previewMessageButtonSleep"
+            android:textColor="#17202A">
+        </TextView>
+
+        <Button
+            android:id="@+id/sendMessageSleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_button"
+            android:layout_below="@id/previewMessageTextViewSleep"
+            android:text="Send Message">
+        </Button>
+
+    </RelativeLayout>
+
+    </FrameLayout>
+
+</ScrollView>

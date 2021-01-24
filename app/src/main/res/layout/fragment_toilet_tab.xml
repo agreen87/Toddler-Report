@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToiletTab">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/paper"
+        android:alpha="0.3">
+    </ImageView>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp">
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="42dp"
+            >
+            <RadioButton
+                android:id="@+id/urineRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urine">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/bowelMovementRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="4"
+                android:text="Bowel Movement">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/bothRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Both">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/dryRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dry">
+            </RadioButton>
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/linerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroup"
+            android:paddingTop="8dp"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/checkboxAccident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accident">
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkboxTried"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tried">
+            </CheckBox>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/commentEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/linerLayout"
+            android:inputType="textCapSentences"
+            android:hint="Comments:">
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/linerLayoutViewButton"
+            android:layout_below="@id/commentEditText"
+            android:paddingTop="22dp"
+            >
+            <Button
+                android:id="@+id/viewMessageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_button"
+                android:text="Preview Message">
+            </Button>
+        </LinearLayout>
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/viewMessageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/linerLayoutViewButton"
+            android:textColor="#17202A">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/viewMessageTextView"
+            android:paddingTop="13dp">
+
+            <Button
+                android:id="@+id/sendMessageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_button"
+                android:text="Send Message">
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+    </FrameLayout>
+</ScrollView>

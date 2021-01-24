@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodTab">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/paper"
+        android:alpha="0.3">
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/nameTextViewFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/nameTextViewFood"
+            android:paddingTop="41dp"
+            android:id="@+id/appetiteLevel"
+            android:text="Appetite Level"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            >
+        </TextView>
+        <RadioGroup
+            android:id="@+id/radioGroupFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appetiteLevel"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/moderate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moderate">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/great"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Great">
+            </RadioButton>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/commentEditTextFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/radioGroupFood"
+            android:inputType="textCapSentences"
+            android:hint="Comments:">
+        </EditText>
+
+        <Button
+            android:id="@+id/previewMessageButtonFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_button"
+            android:layout_below="@id/commentEditTextFood"
+            android:text="Preview Message">
+        </Button>
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/previewMessageTextViewFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/previewMessageButtonFood"
+            android:textColor="#17202A">
+        </TextView>
+
+        <Button
+            android:id="@+id/sendMessageButtonFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_button"
+            android:layout_below="@id/previewMessageTextViewFood"
+            android:text="Send Message">
+        </Button>
+
+    </RelativeLayout>
+
+    </FrameLayout>
+
+</ScrollView>
